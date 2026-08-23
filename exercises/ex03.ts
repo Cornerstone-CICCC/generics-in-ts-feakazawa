@@ -5,26 +5,19 @@
 // numbers, strings, and custom objects.
 
 function reverseArray<T>(arr: T[]) {
-  let reversedArray = arr.toString().split(",").toReversed();
-
-  if (typeof arr[0] === "string") {
-    return reversedArray;
-  }
-
-  if (typeof arr[0] === "number") {
-    const numbArray = reversedArray.map((item) => Number(item));
-    return numbArray;
-  }
-
-  if (typeof arr[0] === "object") {
+  if (
+    typeof arr[0] === "string" ||
+    typeof arr[0] === "number" ||
+    typeof arr[0] === "object" ||
+    typeof arr[0] === "boolean"
+  ) {
     return arr.toReversed();
   }
 }
 
 console.log(reverseArray(["fernanda", "roberta", "adriana"]));
-console.log(reverseArray([1, 2, 3]));
+console.log(reverseArray([1, 2, 3, 55, 22]));
 console.log(reverseArray(["apple", 12, "old", 35]));
-console.log(reverseArray([56, "bye", "hello", 11]));
 
 const workers = [
   { name: "Sophie", age: 22 },
@@ -34,3 +27,4 @@ const workers = [
 ];
 
 console.log(reverseArray(workers));
+console.log(reverseArray([false, true, true, false, false]));
