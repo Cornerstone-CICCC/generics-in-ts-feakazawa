@@ -1,0 +1,25 @@
+{
+  "name": "generics-in-ts-feakazawa",
+  "version": "1.0.0",
+  "description": "Welcome to `<generics>` in TypeScript! In this exercise, you will practice your new skills in TypeScript!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cornerstone-CICCC/generics-in-ts-feakazawa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Cornerstone-CICCC/generics-in-ts-feakazawa/issues"
+  },
+  "homepage": "https://github.com/Cornerstone-CICCC/generics-in-ts-feakazawa#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "typescript": "^7.0.2"
+  }
+}
